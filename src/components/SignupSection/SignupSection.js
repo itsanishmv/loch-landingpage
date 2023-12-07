@@ -15,7 +15,7 @@ function SignupSection() {
   }
 
   return (
-    <div className="border  flex flex-col justify-center items-center w-2/5 border-black">
+    <div className="flex flex-col justify-center items-center w-[640px]">
       <form action="https://app.loch.one/welcome">
         <div className="flex flex-col justify-center items-center  w-[365px] ">
           <h1

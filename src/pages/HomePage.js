@@ -4,7 +4,7 @@ import SignupSection from "../components/SignupSection/SignupSection";
 
 function HomePage() {
   return (
-    <div className="flex   h-screen  ">
+    <div className="flex  ">
       <ContentSection />
       <SignupSection />
     </div>
