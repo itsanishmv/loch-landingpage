@@ -15,9 +15,9 @@ function SignupSection() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center w-[640px]">
+    <div className="flex flex-col justify-center items-center sm:w-[640px] px-4 w-full">
       <form action="https://app.loch.one/welcome">
-        <div className="flex flex-col justify-center items-center  w-[365px] ">
+        <div className="flex flex-col justify-center items-center  sm:w-[365px] ">
           <h1
             className="sm:w-[340px] hidden sm:flex justify-start
           leading-main font-medium  font-Inter text-4xl text-grey "
@@ -25,7 +25,7 @@ function SignupSection() {
             Sign up for <br /> exclusive access.
           </h1>
           <h1
-            className="sm:hidden w-[300px] flex justify-start
+            className="sm:hidden flex justify-start
           font-medium  font-Inter text-2xl text-grey text-center py-5 "
           >
             Sign up for exclusive access.
@@ -33,12 +33,12 @@ function SignupSection() {
           <input
             onChange={handleEmailInput}
             value={email}
-            className=" w-[340px] px-5 py-6 outline-none border border-lightgrey rounded-lg sm:mt-8 font-Inter "
+            className="sm:w-[340px] w-full px-5 py-6 outline-none border border-lightgrey rounded-lg sm:mt-8 font-Inter "
             type="text"
             placeholder="Your email address"
           />
           {error ? (
-            <span className="flex   justify-start w-[340px] ml-10 text-xs text-[red] font-Inter font-medium">
+            <span className="flex   justify-start w-full sm:w-[340px] ml-10 text-xs text-[red] font-Inter font-medium">
               Please enter a valid email
             </span>
           ) : (
@@ -47,11 +47,11 @@ function SignupSection() {
           <button
             type="submit"
             disabled={error || email === undefined}
-            className="border w-[340px] bg-dark text-white rounded-lg font-Inter font-semibold text-base py-7 mt-6"
+            className="border sm:w-[340px] w-full bg-dark text-white rounded-lg font-Inter font-semibold text-base py-7 mt-6"
           >
             Get started
           </button>
-          <p className="flex justify-center font-semibold text-base sm:mt-[42px] w-full ">
+          <p className="flex justify-center font-semibold text-sm sm:text-base sm:mt-[42px] w-full ">
             You’ll receive an email with an invite link to join.
           </p>
         </div>
