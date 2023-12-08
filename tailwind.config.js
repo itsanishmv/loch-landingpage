@@ -21,9 +21,18 @@ module.exports = {
     },
 
     extend: {
-      backgroundImage: {
+      background: {
         "card-gradient":
-          "linear-gradient(0deg, #FFFFFF, #FFFFFF),linear-gradient(180deg, rgba(255, 255, 255, 0.2) 27.5%, rgba(22, 93, 255, 0.162) 157.71%)",
+          "linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "slide-animation": "slide 5s linear infinite",
       },
     },
   },

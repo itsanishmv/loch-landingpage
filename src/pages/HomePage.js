@@ -4,7 +4,7 @@ import SignupSection from "../components/SignupSection/SignupSection";
 
 function HomePage() {
   return (
-    <div className="flex  ">
+    <div className="flex flex-wrap sm:flex-nowrap ">
       <ContentSection />
       <SignupSection />
     </div>

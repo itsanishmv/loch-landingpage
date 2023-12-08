@@ -1,11 +1,12 @@
 import React from "react";
-
-function Card({ icon, title, checkbox, id }) {
+import clsx from "clsx";
+function Card({ icon, title, checkbox, id, index }) {
   return (
     <div
-      className={`bg-white text-dark h-[171px] min-w-[189px]  rounded-lg p-[14px] ${
+      className={clsx(
+        "bg-white text-dark h-[171px] min-w-[189px]  rounded-lg p-[14px]",
         !checkbox && "bg-gradient-to-t from-blue to-white"
-      } `}
+      )}
     >
       <div className="flex justify-between  items-start">
         <img

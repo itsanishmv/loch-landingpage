@@ -5,11 +5,11 @@ function Content({ flip, isCarousel, carouselData, img, icon, title, body }) {
     <div
       className={`${
         flip && "flex-row-reverse"
-      } text-white font-Inter flex justify-between container mx-auto `}
+      } text-white font-Inter flex sm:justify-between justify-center items-center flex-wrap container mx-auto max-sm:gap-4 w-full  `}
     >
       <div
-        className={`text flex flex-col w-[322px] gap-4 ml-16  ${
-          flip && "text-right items-end mr-16"
+        className={`max-sm:text-center max-sm:items-center flex flex-col w-[322px] gap-4 sm:ml-16  ${
+          flip && "sm:text-right text-center sm:items-end sm:mr-16"
         }`}
       >
         <img
@@ -32,7 +32,7 @@ function Content({ flip, isCarousel, carouselData, img, icon, title, body }) {
           <Carousel data={carouselData} />
         </div>
       ) : (
-        <img className=" ml-16" src={img} alt={img} />
+        <img className=" sm:ml-16" src={img} alt={img} />
       )}
     </div>
   );
